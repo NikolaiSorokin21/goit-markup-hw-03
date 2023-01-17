@@ -1,0 +1,219 @@
+:root {
+    /* BGC */
+    --bgc-dark: #2E2F42;
+    --bgc-light: #F4F4FD;
+    --bgc-image: #E7E9FC;
+
+    /* text color */
+    --hero-text-color: #ffffff;
+    --accent-color: #4D5AE5;
+    --button-text-color: #ffffff;
+    --button-click-color: #404BBF;
+    --p-txt-secondary: #E7E9FC;
+    --primary-text-color: #2E2F42;
+    --secondary-text-color: #434455;
+
+    /* font family */
+    --primery-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+
+}
+
+/**
+  |============================
+  | body
+  |============================
+*/
+body {
+    background-color: #ffffff;
+    font-family: var(--primery-font);
+    font-size: 16px;
+    color: var(--primary-text-color);
+}
+
+/**
+  |============================
+  | primary decoration
+  |============================
+*/
+.link {
+    text-decoration: none;
+    font-style: normal;
+}
+
+.list {
+    list-style: none;
+}
+
+
+/**
+  |============================
+  | Header Section
+  |============================
+*/
+/* Logo */
+.logo-head {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+.web {
+    color: var(--accent-color)
+}
+
+/* Navigation */
+
+.site-nav .link {
+    font-weight: 500;
+    line-height: calc(24 /16);
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+}
+
+.site-nav .link.current {
+    color: var(--accent-color)
+}
+
+/* Address */
+
+.address-nav .link {
+    line-height: calc(24 / 16);
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color)
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+/**
+  |============================
+  | Hero section
+  |============================
+*/
+.hero {
+    background-color: #2E2F42;
+}
+
+.hero-title{
+        font-weight: 700;
+        font-size: 56px;
+        line-height: calc(60/56);
+        letter-spacing: 0.02em;
+        color: var(--hero-text-color);
+}
+
+/* Button */
+.button-action {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.04em;
+
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+    cursor: pointer;
+}
+
+.button-action:active {
+    background-color: var(--button-click-color);
+}
+
+.button-action:active {
+    background-color: var(--button-click-color);
+}
+
+/**
+  |============================
+  | Main section
+  |============================
+*/
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40/36);
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.section-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+    letter-spacing: 0.02em;
+}
+
+.section-text {
+    line-height: calc(24 /16);
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-text-color);
+}
+
+
+.team-list {
+    background-color: #F4F4FD
+}
+
+
+/**
+  |============================
+  | Footer
+  |============================
+*/
+
+.footer {
+    background-color: #2E2F42;
+}
+
+.logo-foot {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.text-foot {
+    line-height: calc(24 / 16);
+    letter-spacing: 0.02em;
+    color: #E7E9FC;
+}
+
+.logo-foot.link {
+    color: #F4F4FD;
+}
+
+
+/**
+  |============================
+  | Portfolio page
+  |============================
+*/
+
+.button-nav {
+    font-family: var(--primery-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24 / 16);
+    letter-spacing: 0.04em;
+
+    background-color: var(--bgc-light);
+    color: var(--accent-color);
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-nav:hover,
+.button-nav:focus {
+    background-color: var(--accent-color);
+    color: var(--button-text-color);
+}
