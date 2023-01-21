@@ -9,101 +9,147 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
-    <!--logo-->
-    <header>
-        <a class="link logo-head" href="index.html"><span class="web">WEB</span>Studio</a>
-        <nav class="site-nav">
-            <ul class="list">
-                <li><a class="link" href="index.html">Studio</a></li>
-                <li><a class="link current" href="">Portfolio</a></li>
-                <li><a class="link" href="">Contacts</a></li>
-            </ul>
-        </nav>
-        <!-- Contacts of Web Studio -->
-        <address>
-            <ul class="list address-nav">
-                <li><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
-
+    <header class="border-section">
+        <!-- logo -->
+        <div class="container logo-nav pad-top-btm">
+            <a class="link logo-head" href="index.html"><span class="web">WEB</span>Studio</a>
+            <nav>
+                <ul class="site-nav list">
+                    <li class="nav-item"><a class="link" href="index.html">Studio</a></li>
+                    <li class="nav-item"><a class="link current" href="">Portfolio</a></li>
+                    <li class="nav-item"><a class="link" href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <!-- Contacts of Web Studio -->
+            <address>
+                <ul class="list address-nav">
+                    <li class="nav-item">
+                        <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </header>
     <main>
         <!--Page navigation-->
-        <section>
-            <h1 hidden>Our services</h1>
-            <ul class="list">
-                <li><button type="button" class="button-nav">All</button></li>
-                <li><button type="button" class="button-nav">Web Site</button></li>
-                <li><button type="button" class="button-nav">App</button></li>
-                <li><button type="button" class="button-nav">Design</button></li>
-                <li><button type="button" class="button-nav">Marketing</button></li>
-            </ul>
-            <ul class="list">
-                <li>
-                    <img src="./images/images-portfolio/pic1.jpg" alt="app interface shots" width="360" height="300">
-                    <h2 class="section-subtitle">Banking App Interface Concept</h2>
-                    <p class="section-text">App</p>
-                </li>
-                <li>
-                    <img src="./images/images-portfolio/pic2.jpg" alt="text-list of apps for cashless payment"
-                        width="360" height="300">
-                    <h2 class="choice">Cashless Payment</h2>
-                    <p class="section-text">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/images-portfolio/pic3.jpg" alt="editation app on laptop and phone screen"
-                        width="360" height="300">
-                    <h2 class="section-subtitle">Meditation App</h2>
-                    <p class="section-text">App</p>
-                </li>
-                <li>
-                    <img src="./images/images-portfolio/pic4.jpg"
-                        alt="navigatiln app on the phone screen in front of the car driver" width="360" height="300">
-                    <h2 class="section-subtitle">Taxi Service</h2>
-                    <p class="section-text">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/images-portfolio/pic5.jpg" alt="phone screen with beautiful wallpaper"
-                        width="360" height="300">
-                    <h2 class="section-subtitle">Screen Illustrations</h2>
-                    <p class="section-text">Design</p>
-                </li>
-                <li>
-                    <img src="./images/images-portfolio/pic6.jpg"
-                        alt="smiling girl in an orange sweater looks at the phone scree" width="360" height="300">
-                    <h2 class="section-subtitle">Online Courses</h2>
-                    <p class="section-text">Marketing</p>
-                </li>
-                <li>
-                    <img src="./images/images-portfolio/pic7.jpg" alt="phone screen wiht picktures arranged in a grid"
-                        width="360" height="300">
-                    <h2 class="section-subtitle">Instagram Stories Concept</h2>
-                    <p class="section-text">Design</p>
-                </li>
-                <li>
-                    <img src="./images/images-portfolio/pic8.jpg" alt="a woman with a shopping bag is walking"
-                        width="360" height="300">
-                    <h2 class="section-subtitle">Organic Food</h2>
-                    <p class="section-text">Web Site</p>
-                </li>
-                <li>
-                    <img src="./images/images-portfolio/pic9.jpg"
-                        alt="a man pours cream into coffee creating a beautiful pattern" width="360" height="300">
-                    <h2 class="section-subtitle">Fresh Coffee</h2>
-                    <p class="section-text">Web Site</p>
-                </li>
-            </ul>
+        <section class="portfolio-section">
+            <div class="container pad-top">
+                <h1 class="visually-hidden">Our services</h1>
+                <ul class="list choice-button">
+                    <li class="button-item">
+                        <button type="button" class="button-nav">All</button>
+                    </li>
+                    <li class="button-item">
+                        <button type="button" class="button-nav">Web</button>
+                    </li>
+                    <li class="button-item">
+                        <button type="button" class="button-nav">App</button>
+                    </li>
+                    <li class="button-item">
+                        <button type="button" class="button-nav">Design</button>
+                    </li>
+                    <li class="button-item">
+                        <button type="button" class="button-nav">Marketing</button>
+                    </li>
+                </ul>
+
+                <ul class="list list-choice">
+                    <li class="choice-card">
+                        <img src="./images/images-portfolio/pic1.jpg" alt="app interface shots" width="360"
+                            height="300">
+                        <div class="card-descript">
+                            <h2 class="subtitle">Banking App Interface Concept</h2>
+                            <p class="text">App</p>
+                        </div>
+                    </li>
+                    <li class="choice-card">
+                        <img src="./images/images-portfolio/pic2.jpg" alt="text-list of apps for cashless payment"
+                            width="360" height="300">
+                        <div class="card-descript">
+                            <h2 class="subtitle">Cashless Payment</h2>
+                            <p class="text">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="choice-card">
+                        <img src="./images/images-portfolio/pic3.jpg" alt="editation app on laptop and phone screen"
+                            width="360" height="300">
+                        <div class="card-descript">
+                            <h2 class="subtitle">Meditation App</h2>
+                            <p class="text">App</p>
+                        </div>
+                    </li>
+                    <li class="choice-card">
+                        <img src="./images/images-portfolio/pic4.jpg"
+                            alt="navigatiln app on the phone screen in front of the car driver" width="360"
+                            height="300">
+                        <div class="card-descript">
+                            <h2 class="subtitle">Taxi Service</h2>
+                            <p class="text">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="choice-card">
+                        <img src="./images/images-portfolio/pic5.jpg" alt="phone screen with beautiful wallpaper"
+                            width="360" height="300">
+                        <div class="card-descript">
+                            <h2 class="subtitle">Screen Illustrations</h2>
+                            <p class="text">Design</p>
+                        </div>
+                    </li>
+                    <li class="choice-card">
+                        <img src="./images/images-portfolio/pic6.jpg"
+                            alt="smiling girl in an orange sweater looks at the phone scree" width="360" height="300">
+                        <div class="card-descript">
+                            <h2 class="subtitle">Online Courses</h2>
+                            <p class="text">Marketing</p>
+                        </div>
+                    </li>
+                    <li class="choice-card">
+                        <img src="./images/images-portfolio/pic7.jpg"
+                            alt="phone screen wiht picktures arranged in a grid" width="360" height="300">
+                        <div class="card-descript">
+                            <h2 class="subtitle">Instagram Stories Concept</h2>
+                            <p class="text">Design</p>
+                        </div>
+                    </li>
+                    <li class="choice-card">
+                        <img src="./images/images-portfolio/pic8.jpg" alt="a woman with a shopping bag is walking"
+                            width="360" height="300">
+                        <div class="card-descript">
+                            <h2 class="subtitle">Organic Food</h2>
+                            <p class="text">Web Site</p>
+                        </div>
+                    </li>
+                    <li class="choice-card">
+                        <img src="./images/images-portfolio/pic9.jpg"
+                            alt="a man pours cream into coffee creating a beautiful pattern" width="360" height="300">
+                        <div class="card-descript">
+                            <h2 class="subtitle">Fresh Coffee</h2>
+                            <p class="text">Web Site</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
-        <a class="link logo-foot" href="index.html"><span class="web">WEB</span>Studio</a>
-        <p class="text text-foot">Increase the flow of customers and sales for your business with digital marketing &
-            growth solutions.</p>
+        <div class="container">
+            <a class="link logo-foot pad-top-btm" href="index.html"><span class="web">WEB</span>Studio</a>
+            <div class="logo-descript">
+                <p class="text text-foot">Increase the flow of customers and sales for your business with digital
+                    marketing
+                    &
+                    growth solutions.</p>
+            </div>
+        </div>
     </footer>
 
 </body>
